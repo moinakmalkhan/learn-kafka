@@ -5,6 +5,12 @@ CONTAINER_NAME=kafka-app
 up:
 	docker-compose up -d
 
+stop:
+	docker-compose stop
+
+down:
+	docker-compose down
+
 ssh:
 	docker exec -it $(CONTAINER_NAME) /bin/sh
 
